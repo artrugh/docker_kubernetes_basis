@@ -13,8 +13,8 @@ Commands
 
 You can find two simple examples:
 
-[docker-example](/docker-example/)
-[kubernetes-example](/kubernetes-example/)
+- [docker-example](/docker-example/)
+- [kubernetes-example](/kubernetes-example/)
 
 
 
