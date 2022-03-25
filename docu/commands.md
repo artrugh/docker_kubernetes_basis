@@ -20,7 +20,7 @@
 | --- | --- |
 | docker container | show containers |
 | docker ps | see running containers |
-| docker ps -a | show all the local containers |
+| docker ps -a | show all the running containers |
 | docker run -p<host-port>:<container-port> <image-name>| create a new container and bind host port to container port |
 | docker run --name <container-name> <image-name> | pull an image and create a container with an specif name |
 | docker run --net <network-name> <image-name> | pull an image and create a container running in a specific network |
