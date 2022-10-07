@@ -49,14 +49,14 @@ After an Image is pull to a host machine (server or local machine), it creates a
 
 Multiple container can run in a host machine.
 
-The container process that runs is isolated in that it has its own file system, its own networking, and its own isolated process tree separate from the host.
+The container process that runs is isolated, which means that it has its own file system, its own networking, and its own isolated process tree separate from the host.
 
 Containers listen to a especific **port**, to talk to the application running inside of a container.
 
 These port is bind with a local port or host port.
 
 ```diff
-+ There can be issues if the port is already used locally.In that case, a new host port should be binded.
++ There can be issues if the port is already used locally. In that case, a new host port should be binded.
 ```
 
 ### Where are container Images stored?
@@ -95,9 +95,9 @@ Start by basing it on another Image
 | ---- | ---- |
 | install | **FROM** node |
 | set MONGO_DB_USERNAME=admin set MONDO_DB_PWD=password | **ENV** MONGO_DB_USERNAME=admin \ MONDO_DB_PWD=password |
-| create/home/app folder | **RUN** mkdir -p /home/app (execute linux command) this directory li created inside the container |
-| copy current folder filer to /home/app | **COPY** ./home/app (execute on the host) |
-| start the app with: "node server.js" | CMD["node", "server.js"] entry pint command - run inside the container |
+| create/home/app folder | **RUN** mkdir -p /home/app (execute linux command) this directory is created inside the container |
+| copy current folder files to /home/app | **COPY** ./home/app (execute on the host) |
+| start the app with: "node server.js" | CMD["node", "server.js"] entry point command - run inside the container |
 
 ### Docker volumes
 
